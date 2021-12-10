@@ -1,4 +1,13 @@
-
 .section-1{
     height: 32rem;
-background-color: black;}
+    background-color: black;
+    
+}
+.section{
+   
+width: 50%;}
+
+.carousel-item{
+    height: 25rem;
+    
+}
