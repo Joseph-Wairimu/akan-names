@@ -1,6 +1,6 @@
 .section{
     background-color: #041c32;
-    height: fit-content;
+    height: 80rem;
 }
 .form{
     justify-content: space-evenly;
@@ -31,8 +31,9 @@ h3{
     text-align: center;}
 
 label {
-    display: block;
+    /* display: block; */
     font: 2.5rem 'Fira Sans', sans-serif;
+    color: #f7f7f7;
 }
 
 input,
@@ -40,4 +41,7 @@ label {
     margin: .4rem 0;
     padding: .5rem;
 }
-input>value{ margin: 2rem;}
+.data{
+    font: 2.5rem 'Fira Sans', sans-serif;
+    color: #f7f7f7;
+}
