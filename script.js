@@ -17,3 +17,6 @@ let Female = [
     { day: "Friday", Name: "Afua" },
     { day: "Saturday", Name: "Ama" },
 ];
+let date = document.querySelector("#start").value;
+document.getElementById("demo").innerHTML =date
+
