@@ -44,4 +44,5 @@ label {
 .data{
     font: 2.5rem 'Fira Sans', sans-serif;
     color: #f7f7f7;
+    text-align: center;
 }

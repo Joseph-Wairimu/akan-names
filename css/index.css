@@ -22,7 +22,13 @@
         font-size: 22px;
         padding: 0 5rem;
         text-align: center;}
-        
+        .paddingg{
+            color: #f7f7f7;
+            font-weight: bold;
+            font-size: 40px;
+            padding: 0 5rem;
+            text-align: center;}
+            
         .carousel-item{
             height: 25rem;
             
@@ -52,4 +58,6 @@
     text-align: center
     ;
 } */
-#head{color: #f7f7f7;}
+#head{color: #f7f7f7;
+    font-weight: bold;
+    font-size: 40px;}
