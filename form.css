@@ -1,12 +1,16 @@
 .section{
     background-color: #041c32;
-    height: 32rem;
+    height: fit-content;
 }
-
-h1{
+.form{
+    justify-content: space-evenly;
+}
+h1 {
     text-align: center;
 }
-
+h3{
+    text-align: center;
+}
 
 label {
     display: block;
