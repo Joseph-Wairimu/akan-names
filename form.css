@@ -32,10 +32,12 @@ h3{
 
 label {
     display: block;
-    font: 1rem 'Fira Sans', sans-serif;
+    font: 2.5rem 'Fira Sans', sans-serif;
 }
 
 input,
 label {
     margin: .4rem 0;
+    padding: .5rem;
 }
+input>value{ margin: 2rem;}
