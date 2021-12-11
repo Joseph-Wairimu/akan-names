@@ -11,6 +11,13 @@ h1 {
 h3{
     text-align: center;
 }
+#head{color: #f7f7f7;}
+.padding{
+    color: #f7f7f7;
+    font-weight: lighter;
+    font-size: 22px;
+    padding: 0 5rem;
+    text-align: center;}
 
 label {
     display: block;
