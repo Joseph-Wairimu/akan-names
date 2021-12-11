@@ -12,9 +12,17 @@ h1 {
 h3{
     text-align: center;
 }
+.image{
+    height: 30rem;
+    border-radius: 50%;
+    
+    
+}
 #head{
     color: #f7f7f7;
-    font-weight: bold;}
+    font-weight: bold;
+    font-size: 2rem;
+}
 .padding{
     color: #f7f7f7;
     font-weight: lighter;
