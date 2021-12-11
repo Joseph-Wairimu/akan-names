@@ -21,7 +21,7 @@ h3{
 #head{
     color: #f7f7f7;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .padding{
     color: #f7f7f7;
@@ -45,4 +45,7 @@ label {
     font: 2.5rem 'Fira Sans', sans-serif;
     color: #f7f7f7;
     text-align: center;
+}
+.btn{
+    padding: 10px;
 }
