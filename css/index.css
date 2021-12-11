@@ -17,8 +17,8 @@
         
      } 
      .padding{
-        color:  white;
-        font-weight: 500;
+        color: #f7f7f7;
+        font-weight: light;
         font-size: 22px;
         padding: 0 5rem;
         text-align: center;}
@@ -46,18 +46,10 @@
     background-color: #212529;
   }
 
-  label {
-    display: block;
-    font: 1rem 'Fira Sans', sans-serif;
-}
-
-input,
-label {
-    margin: .4rem 0;
-}
+  
 /* .form{
     display: flex;
     text-align: center
     ;
 } */
-#head{color: #f7f7f7;;}
+#head{color: #f7f7f7;}
