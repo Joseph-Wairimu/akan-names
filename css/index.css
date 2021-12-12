@@ -1,56 +1,44 @@
-/* 
-@media only screen and (min-width: 1200px) { */
-    .section-1{
-        height: fit-content;
-        background-color: #041c32;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row-reverse;
-        /* flex-wrap: wrap; */
-        
-    }
-
-  .section{
-        
-        width: 63rem;
-        flex-wrap: wrap;
-        
-     } 
-     .padding{
+.section-1{
+    height: fit-content;
+    background-color: #041c32;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+.section{
+    width: 63rem;
+    flex-wrap: wrap;
+}
+.padding{
+    color: #f7f7f7;
+    font-weight: light;
+    font-size: 22px;
+    padding: 0 5rem;
+    text-align: center;
+}
+.paddingg{
         color: #f7f7f7;
-        font-weight: light;
-        font-size: 22px;
+        font-weight: bold;
+        font-size: 40px;
         padding: 0 5rem;
-        text-align: center;}
-        .paddingg{
-            color: #f7f7f7;
-            font-weight: bold;
-            font-size: 40px;
-            padding: 0 5rem;
-            text-align: center;}
-            
-        .carousel-item{
-            height: 25rem;
-            
-        }
-        #carouselExampleCaptions{
-            height: 25rem;
-            width: 63.5rem;
-        }
-        .description{
-            width:63rem;
-            /* background-color: red; */
-            flex-wrap: wrap;
-        }
- /* img{
-           width: 100%;
-           height: 100%; 
-        } */
-  .section-2{
+        text-align: center;
+}
+.carousel-item{
+    height: 25rem;
+}
+#carouselExampleCaptions{
+    height: 25rem;
+    width: 63.5rem;
+}
+.description{
+    width:63rem;
+    flex-wrap: wrap;
+}
+.section-2{
     text-align: center;
     height: 32rem;
     background-color: #212529;
-  }
+}
   
 #head{color: #f7f7f7;
     font-weight: bold;
