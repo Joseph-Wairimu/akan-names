@@ -18,31 +18,37 @@ let Female = [
   { day: "Saturday", Name: "Ama" },
 ];
 
-let button = document.querySelector("submit");
-let result = document.getElementById("age");
+let button = document.querySelector("#submit");
 
 
-function validate () {
-      let day =0;
-      let month =0;
-      let year =0;
+button.addEventListener("click",function() {
+    let error = 0;
+    let day = document.getElementById("date").value;
+    let month = document.getElementById("month").value;
+    let year = document.getElementById("year").value;
+    let err = document.getElementById("error");
     
     if (day <=0 || day >31){
-    alert("Enter a valid date");
-    }else if
-    (month <=0 || month >12){
-        alert("Enter a valid date");
-    }else if
-    (year <=0 || year >2021)
-    {
-        alert("Enter a valid date");
+        error = 1
     }
     else{
-        alert("date is valid")
+        if(month <=0 || month >12){
+            error = 1
+        }
+        else{
+            if(year <=0 || year >2021)
+            {
+                error = 1
+            }
+        }
     }
-    document.getElementById("date").value;
-    document.getElementById("month").value;
-    document.getElementById("year").value;
-document.getElementById("age").innerHTML =  "enter a valid date";
+    if (error == 1){
+        err.innerHTML = "Date is invalid"
+    }
+    else{
+        var d = new Date(year+"/"+month+"/"+day)
+        var akan = d.getDay()
+        
+    }
 
-};
+});
