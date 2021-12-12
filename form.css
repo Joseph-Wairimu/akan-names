@@ -1,10 +1,17 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+  
+    font-size: 15px;
+    /* line-height: 1.5; */
+    padding: 0;
+    margin: 0;
+}
+
 .section{
     background-color: #041c32;
     height: 80rem;
 }
-.form{
-    justify-content: space-evenly;
-}
+
 h1 {
     text-align: center;
    
@@ -29,26 +36,37 @@ h3{
     font-size: 22px;
     padding: 0 5rem;
     text-align: center;}
-
-label {
-    /* display: block; */
-    font: 2.5rem 'Fira Sans', sans-serif;
-    color: #f7f7f7;
-}
-
-input,
-label {
-    margin: .4rem 0;
-    padding: .5rem;
-}
-.data{
-    font: 2.5rem 'Fira Sans', sans-serif;
-    color: #f7f7f7;
-    text-align: center;
-}
-.btn{
-    padding: 10px;
-    background-color: #212529;
-    color: #f7f7f7;
-
-}
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .form{
+        width:520px;
+        /* height: auto; */
+            min-height:100px;
+        margin: 25px auto;
+        background-color: #F7F7F7;
+        border-radius: 5px;
+    }
+    .base{
+        width: 100%;
+         
+        margin: 0;
+        overflow: hidden;
+        display: block;
+        float: none;
+    }
+     
+    .base h4{
+        font-size: 26px;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: normal;
+            margin-top: 0px;
+            box-shadow: 0px 2px #212529;
+            background: #C7C7C7;
+            font-size: 34px;
+        color: #041c32;
+    }
+    
