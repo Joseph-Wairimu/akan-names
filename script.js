@@ -20,12 +20,32 @@ let Female = [
 
 let button = document.querySelector("#submit");
 
-
+function validate(day,month,year){
+    if(year%4==0 && month==2){
+        if(day>29){
+            return false
+        }
+        else return true
+    }
+    if(month==2 && year%4!=0){
+        if(day>28){
+            return false
+        }
+        else return true
+    }
+    var today = new Date()
+    var d = new Date(year+"/"+month+"/"+day)
+    if(d>today){
+        return false
+    }
+    else return true
+}
 button.addEventListener("click",function() {
     let error = 0;
     let day = document.getElementById("date").value;
     let month = document.getElementById("month").value;
     let year = document.getElementById("year").value;
+    let gender = document.getElementById("gender").value
     let err = document.getElementById("error");
     
     if (day <=0 || day >31){
@@ -43,12 +63,33 @@ button.addEventListener("click",function() {
         }
     }
     if (error == 1){
-        err.innerHTML = "Date is invalid"
+        err.style.color = "red"
+        err.innerHTML = "Date is invalid!"
     }
     else{
-        var d = new Date(year+"/"+month+"/"+day)
-        var akan = d.getDay()
-        
+        if(validate(day,month,year)){
+            var d = new Date(year+"/"+month+"/"+day)
+            var akan = d.getDay()
+            var akanName
+            if(gender=="male"){
+                err.style.color = "green"
+                akanName = Male[akan]
+                err.innerHTML = "Heyy, Your akan name is <b>"+akanName.Name+"</b> because you were born on a <b>"+akanName.day
+            }
+            else if(gender=="female"){
+                err.style.color = "green"
+                akanName = Female[akan]
+                err.innerHTML = "Heyy, Your akan name is <b>"+akanName.Name+"</b> because you were born on a <b>"+akanName.day
+            }
+            else{
+                err.innerHTML = "You did not enter gender"
+                err.style.color = "red"
+            }
+        }
+        else{
+            err.style.color = "red"
+            err.innerHTML = "Date is invalid!"
+        }
     }
 
 });
